@@ -24,6 +24,5 @@ import { mapGetters } from "vuex";
 
 export default {
 
-  methods: {},
 };
 </script>

@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
 
-export const API_URL = 'https://www.i-class.info/api'
+export const API_URL = 'https://myclassr00m.herokuapp.com/api'
 
 const createStore = () => {
   return new Vuex.Store({

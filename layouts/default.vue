@@ -1,23 +1,28 @@
 <template>
   <div>
     <div class="ui fixed inverted menu">
-      <div class="ui container">
+      <div class="ui container top-menu">
         <a
-          href="#"
+          href="/"
           class="header item"
         >
 
           I-Class
         </a>
-        <nuxt-link
-          class="item"
-          to="/"
-          exact
-        >Home</nuxt-link>
-        <nuxt-link
-          class="item"
-          to="/users"
-        >Users</nuxt-link>
+        <div class="fl-right">
+          <nuxt-link
+            class="item"
+            to="/about"
+            exact
+          > About </nuxt-link>
+          <nuxt-link
+            class="item"
+            to="/articles"
+            exact
+          > Blog </nuxt-link>
+
+        </div>
+
       </div>
     </div>
     <Nuxt/>
@@ -32,6 +37,25 @@ body {
   margin-right: 1.5em;
 }
 .main.container {
-  margin-top: 7em;
+  margin: 7em 10vw 0 10vw;
+
+
+}
+.top-menu {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height: 90px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(222, 223, 224);
+  padding: 20px 10px 20px 10px;
 }
 </style>
