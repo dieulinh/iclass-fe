@@ -1,3 +1,9 @@
+$btn_color: #212529;
+$input_height: 40px;
+$base_line_height: 20px;
+$background_primary: #18a685;
+$base_font_size: 14px;
+$active_bg_primary: #6c7a7b;
 .top-menu {
   display: flex;
   -webkit-box-pack: justify;
@@ -34,7 +40,7 @@
 }
 .menu-right {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .main {
@@ -351,6 +357,6 @@ input:checked + .slider:before {
   }
   .btn-group-menu {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 }

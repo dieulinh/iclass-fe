@@ -1,6 +1,6 @@
 <template>
   <div class="ui main text container">
-    <h1 class="ui header">Users</h1>
+    <h1 class="ui header">Posts</h1>
     <ArticlesDirectory
       :articles="articlesList"
 

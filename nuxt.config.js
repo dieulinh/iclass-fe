@@ -19,12 +19,13 @@ export default {
       'bulma',
       // CSS file in the project
       // SCSS file in the project
-      '~/assets/css/main.scss'
+      // '~/assets/css/main.scss'
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -38,12 +39,23 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     ['@nuxtjs/axios']
   ],
+  axios: {
+    baseURL: process.env.API_SERVER_URL, // Used as fallback if no runtime config is provided
+    retry: { retries: 3 }
+  },
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL
+    }
+  },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

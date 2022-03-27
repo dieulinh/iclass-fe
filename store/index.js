@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
 
-export const API_URL = 'https://myclassr00m.herokuapp.com/api'
+export const API_URL = process.env.API_SERVER_URL;
 
 const createStore = () => {
   return new Vuex.Store({
@@ -21,8 +21,7 @@ const createStore = () => {
     },
     actions: {
       async getArticles({commit}) {
-        const results = await this.$axios.$get(`${API_URL}/articles`);
-        console.log(results)
+        const results = await this.$axios.$get(`${API_URL}/api/articles`);
         commit('setArticles', { articles: results })
       }
     }

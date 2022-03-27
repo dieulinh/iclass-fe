@@ -2,13 +2,11 @@
   <div>
     <div class="ui fixed inverted menu">
       <div class="ui container top-menu">
-        <a
-          href="/"
-          class="header item"
-        >
-
-          I-Class
-        </a>
+        <nuxt-link
+            class="header item"
+            to="/"
+            exact
+          > I-Class </nuxt-link>
         <div class="fl-right">
           <nuxt-link
             class="item"
