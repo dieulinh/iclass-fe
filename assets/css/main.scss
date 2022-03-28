@@ -4,13 +4,42 @@ $base_line_height: 20px;
 $background_primary: #18a685;
 $base_font_size: 14px;
 $active_bg_primary: #6c7a7b;
+.head-main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1;
+  float: none;
+  left: auto;
+  right: auto;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 15px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.fl-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.item {
+  padding-left: 10px;
+}
+a {
+  color: #212322;
+  font-weight: 400;
+}
+a:hover {
+  color: $active_bg_primary;
+  text-decoration: none;
+}
 .top-menu {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -18,7 +47,6 @@ $active_bg_primary: #6c7a7b;
   box-sizing: border-box;
   z-index: 1000;
   background: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(222, 223, 224);
   padding: 20px 10px 20px 10px;
 }
 .contact-container {
@@ -56,10 +84,7 @@ $active_bg_primary: #6c7a7b;
   max-width: 48.5rem;
   background-color: #fff;
 }
-a {
-  color: #000;
-  text-decoration: none;
-}
+
 .mdc-list {
   list-style: none;
 }

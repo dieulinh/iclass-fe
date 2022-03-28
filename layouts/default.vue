@@ -1,28 +1,33 @@
 <template>
   <div>
-    <div class="ui fixed inverted menu">
-      <div class="ui container top-menu">
+    <div class="ui fixed inverted menu top-menu">
+      <div class="ui container head-main">
         <nuxt-link
             class="header item"
             to="/"
             exact
           > I-Class </nuxt-link>
-        <div class="fl-right">
+
+
+      </div>
+      <ul class="fl-right">
+        <li>
           <nuxt-link
-            class="item"
-            to="/about"
-            exact
-          > About </nuxt-link>
+          class="item"
+          to="/about"
+          exact
+        > About </nuxt-link>
+        </li>
+        <li>
           <nuxt-link
             class="item"
             to="/articles"
             exact
           > Blog
           </nuxt-link>
+        </li>
 
-        </div>
-
-      </div>
+      </ul>
 
     </div>
     <Nuxt/>

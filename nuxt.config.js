@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'iclass-fe',
+    title: "I-Class",
     htmlAttrs: {
       lang: 'en'
     },
