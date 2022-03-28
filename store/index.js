@@ -1,7 +1,5 @@
 import Vuex from 'vuex';
 
-export const API_URL = process.env.API_SERVER_URL;
-
 const createStore = () => {
   return new Vuex.Store({
     state: () => {
@@ -21,7 +19,7 @@ const createStore = () => {
     },
     actions: {
       async getArticles({commit}) {
-        const results = await this.$axios.$get(`${API_URL}/api/articles`);
+        const results = await this.$axios.$get(`/api/articles`);
         commit('setArticles', { articles: results })
       }
     }

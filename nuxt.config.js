@@ -41,13 +41,20 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv'
   ],
-
+  proxy: {
+    '/api': {
+      target: 'https://myclassr00m.herokuapp.com',
+      pathRewrite: {
+        '^/api': '/api'
+      }
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ['@nuxtjs/axios']
+    ['@nuxtjs/axios', '@nuxtjs/proxy']
   ],
   axios: {
-    baseURL: process.env.API_SERVER_URL, // Used as fallback if no runtime config is provided
+    baseURL: 'https://myclassr00m.herokuapp.com', // Used as fallback if no runtime config is provided
     retry: { retries: 3 }
   },
   publicRuntimeConfig: {
