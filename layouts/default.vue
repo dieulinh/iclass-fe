@@ -17,11 +17,13 @@
             class="item"
             to="/articles"
             exact
-          > Blog </nuxt-link>
+          > Blog
+          </nuxt-link>
 
         </div>
 
       </div>
+
     </div>
     <Nuxt/>
   </div>

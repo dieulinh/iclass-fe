@@ -3,7 +3,6 @@
     <h1 class="ui header">Posts</h1>
     <ArticlesDirectory
       :articles="articlesList"
-
     />
   </div>
 </template>

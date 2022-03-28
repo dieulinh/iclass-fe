@@ -15,7 +15,7 @@
 
         >
           <td>
-            {{ article.title }}
+            <nuxt-link :to="{ name: 'articles-id', params: { id: article.id }}">{{article.title}}</nuxt-link>
           </td>
 
         </tr>

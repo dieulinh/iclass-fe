@@ -1,9 +1,10 @@
 <template>
   <div class="ui main text container">
+
     <h1 class="ui header">About</h1>
     <ul>
       <li>Javascript (Nodejs, React, <strong>Vue</strong>)</li>
-      <li><strong>Ruby (Rails) &lt;3</strong></li>
+      <li><strong>Ruby (on Rails) &lt;3</strong></li>
       <li>Golang</li>
       <li><strong>SQL(Postgres, MySQL)</strong></li>
       <li>GitHub</li>
@@ -15,6 +16,7 @@
       <li><strong>Docker</strong>.</li>
       <li>GitHub Actions.</li>
     </ul>
+
   </div>
 </template>
 
