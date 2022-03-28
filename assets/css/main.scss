@@ -242,15 +242,13 @@ input:checked + .slider:before {
   transition: .2s ease;
   pointer-events: none;
 }
-.course-cover {
-  // height: 100px;
+.post-cover {
   width: 99%;
-  max-height: 160px;
+  max-height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   border-radius: 3px;
-
 }
 .course-view-wrapper {
   display: flex;

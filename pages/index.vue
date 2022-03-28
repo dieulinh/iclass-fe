@@ -1,7 +1,11 @@
 <template>
   <div class="ui main text container">
 
-    <h1 class="ui header">About</h1>
+    <h1 class="ui header">About <em>Linh</em></h1>
+    <br>
+    <img src="https://freeway-devland.s3.amazonaws.com/uploads/attached_photo/photo/89/web_a1d177c9-aa3e-4f54-a404-d221a8c98ddd.JPG" class="post-cover">
+    <hr/>
+    <h2>Technical focusing </h2>
     <ul>
       <li>Javascript (Nodejs, React, <strong>Vue</strong>)</li>
       <li><strong>Ruby (on Rails) &lt;3</strong></li>
@@ -15,6 +19,11 @@
       <li>Testing tools/frameworks</li>
       <li><strong>Docker</strong>.</li>
       <li>GitHub Actions.</li>
+    </ul>
+    <hr>
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Travel, books, cookings, trekking, swimming</li>
     </ul>
 
   </div>

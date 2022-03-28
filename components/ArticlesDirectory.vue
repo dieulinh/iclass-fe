@@ -4,7 +4,7 @@
     <table class="ui celled table">
       <thead>
         <tr>
-          <th>Photo</th>
+          <th>Posts</th>
 
         </tr>
       </thead>
