@@ -15,7 +15,7 @@
 
         >
           <td>
-            <nuxt-link :to="{ name: 'articles-id', params: { id: article.id }}">{{article.title}}</nuxt-link>
+            <nuxt-link class="article-item" :to="{ name: 'articles-id', params: { id: article.id }}">{{article.title}}</nuxt-link>
           </td>
 
         </tr>
@@ -58,5 +58,11 @@ input {
 }
 .capitalize {
   text-transform: capitalize;
+}
+.article-item {
+  color: #0d2234;
+}
+.article-item::before {
+  content: '- ';
 }
 </style>

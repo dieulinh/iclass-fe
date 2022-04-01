@@ -3,12 +3,10 @@
     <div class="ui fixed inverted menu top-menu">
       <div class="ui container head-main">
         <nuxt-link
-            class="header item"
+            class="header item brand"
             to="/"
             exact
-          > I-Class </nuxt-link>
-
-
+          > Bikiin </nuxt-link>
       </div>
       <ul class="fl-right">
         <li>
@@ -18,17 +16,7 @@
           exact
         > About </nuxt-link>
         </li>
-        <li>
-          <nuxt-link
-            class="item"
-            to="/articles"
-            exact
-          > Blog
-          </nuxt-link>
-        </li>
-
       </ul>
-
     </div>
     <Nuxt/>
   </div>
@@ -43,8 +31,9 @@ body {
 }
 .main.container {
   margin: 7em 10vw 0 10vw;
-
-
+}
+.brand {
+  color: #db0c0c;
 }
 .top-menu {
   display: flex;

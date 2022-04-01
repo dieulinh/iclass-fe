@@ -1,5 +1,8 @@
 # iclass-fe
 
+### An example learning nuxt
+- Sample demo http://www.bikiin.com/
+
 ## Build Setup
 
 ```bash
