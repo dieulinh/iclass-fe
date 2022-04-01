@@ -4,7 +4,8 @@ const createStore = () => {
   return new Vuex.Store({
     state: () => {
       return {
-        articles: []
+        articles: [],
+        authenticated: false
       }
     },
     getters: {
@@ -15,12 +16,18 @@ const createStore = () => {
     mutations: {
       setArticles(state, {articles}) {
         state.articles = articles;
+      },
+      addArticle(state, article) {
+        state.articles.unshift(article);
       }
     },
     actions: {
       async getArticles({commit}) {
         const results = await this.$axios.$get(`/api/articles`);
         commit('setArticles', { articles: results })
+      },
+      addArticle({commit}, payload) {
+        commit('addArticle', payload)
       }
     }
   })

@@ -1,6 +1,6 @@
 <template>
   <div class="ui main text container">
-    <h1 class="ui header">Article {{$route.params.id}} {{article.title}}</h1>
+    <h1 class="ui header article-header">{{article.title}}</h1>
     <div v-html="article.content"></div>
   </div>
 </template>
@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.article-header {
+  font-weight: 700;
+  color: #08ba12;
+}
+</style>
