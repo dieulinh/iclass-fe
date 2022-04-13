@@ -97,7 +97,7 @@ export default {
       var formData = new FormData();
       formData.append("title", this.title);
       formData.append("content", this.content);
-      axios.put(`/api/articles/${this.$route.params.slug}`,
+      this.$axios.put(`/api/articles/${this.$route.params.slug}`,
         formData,
         {headers: {'Authorization': user&&user.token}}
       ).then((response) => {
