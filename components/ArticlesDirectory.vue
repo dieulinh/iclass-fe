@@ -4,23 +4,19 @@
     <table class="ui celled table">
       <thead>
         <tr>
-          <th>Posts</th>
-
+          <th>All posts</th>
         </tr>
       </thead>
       <tbody>
         <tr
           v-for="(article, index) in articles"
           :key="index"
-
         >
           <td>
-            <nuxt-link class="article-item" :to="{ name: 'articles-id', params: { id: article.id }}">{{article.title}}</nuxt-link>
+            <a :href="'articles/'+article.slug">{{article.title}}</a>
           </td>
-
         </tr>
       </tbody>
-
     </table>
   </div>
 </template>

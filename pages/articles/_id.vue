@@ -1,6 +1,7 @@
 <template>
   <div class="ui main text container">
-    <h1 class="ui header article-header">{{article.title}}</h1>
+    <h1 class="article-title">{{ article.title }}</h1>
+
     <div v-html="article.content"></div>
   </div>
 </template>
@@ -33,5 +34,11 @@ export default {
 .article-header {
   font-weight: 700;
   color: #08ba12;
+}
+.article-title {
+  color: #0a4f66;
+  margin-left: -25px;
+  padding: 10px 10px 20px;
+  font-size: 1.3rem;
 }
 </style>

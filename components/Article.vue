@@ -1,7 +1,7 @@
 <template>
   <div class="ui container">
-
-    <h1>{{article.title }}</h1>
+    <h1 class="article-title">{{article.title }}</h1>
+    <hr/>
     <div :html="article.content"></div>
   </div>
 </template>
@@ -20,5 +20,8 @@ export default {
 </script>
 
 <style scoped>
+.article-title {
+  color: #125316;
+}
 
 </style>
