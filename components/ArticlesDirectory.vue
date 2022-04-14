@@ -13,7 +13,7 @@
           :key="index"
         >
           <td>
-            <a :href="'articles/'+article.slug">{{article.title}}</a>
+            <a :href="'articles/'+article.slug" class="article-item">{{article.title}}</a>
           </td>
         </tr>
       </tbody>
@@ -32,7 +32,6 @@ export default {
   },
   data() {
     return {
-
     };
   },
   computed: {
@@ -60,5 +59,6 @@ input {
 }
 .article-item::before {
   content: '- ';
+  line-height: 3.1;
 }
 </style>

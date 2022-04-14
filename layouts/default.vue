@@ -52,4 +52,13 @@ body {
   border-bottom: 1px solid rgb(222, 223, 224);
   padding: 20px 10px 20px 10px;
 }
+ol {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
 </style>

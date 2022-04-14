@@ -1,5 +1,5 @@
 <template>
-  <div class="ui main text container">
+  <div class="ui main text container article-detail-wrapper">
     <h1 class="article-title">{{ article.title }}</h1>
 
     <div v-html="article.content"></div>
@@ -40,5 +40,11 @@ export default {
   margin-left: -25px;
   padding: 10px 10px 20px;
   font-size: 1.3rem;
+  border-bottom: 1px solid #f7b364;
+  margin-bottom: 20px;
 }
+.article-detail-wrapper {
+  text-indent: 10px;
+}
+
 </style>
