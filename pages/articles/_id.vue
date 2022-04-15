@@ -45,6 +45,8 @@ export default {
 }
 .article-detail-wrapper {
   text-indent: 10px;
+  max-width: 70%;
+  margin: 100px auto;
 }
 
 </style>

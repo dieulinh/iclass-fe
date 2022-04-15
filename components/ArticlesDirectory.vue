@@ -1,19 +1,14 @@
 <template>
   <div class="ui container">
-
+    <h2> Recent Posts </h2>
     <table class="ui celled table">
-      <thead>
-        <tr>
-          <th>All posts</th>
-        </tr>
-      </thead>
       <tbody>
         <tr
           v-for="(article, index) in articles"
           :key="index"
         >
           <td>
-            <a :href="'articles/'+article.slug" class="article-item">{{article.title}}</a>
+            <a :href="'articles/'+article.slug" class="article-item link">{{article.title}}</a>
           </td>
         </tr>
       </tbody>
@@ -55,7 +50,7 @@ input {
   text-transform: capitalize;
 }
 .article-item {
-  color: #0d2234;
+  color: #1f6097;
 }
 .article-item::before {
   content: '- ';

@@ -11,7 +11,7 @@
       <ul class="fl-right">
         <li>
           <nuxt-link
-          class="item"
+          class="item about"
           to="/about"
           exact
         > About </nuxt-link>
@@ -19,6 +19,11 @@
       </ul>
     </div>
     <Nuxt/>
+    <footer>
+      <section class="copy-right">
+        Copyright © 2022 Linh Nguyen. All rights reserved.
+      </section>
+    </footer>
   </div>
 </template>
 
@@ -26,11 +31,35 @@
 body {
   background-color: #ffffff;
 }
+#__layout {
+  padding-bottom: 100px;
+}
+footer {
+  position: fixed;
+  padding: 20px;
+  height: 70px;
+  bottom: 0;
+  background: #139696;
+}
+.link {
+  color: #1f6097;
+  line-height: 1.42em;
+  background-color: transparent;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #db6a1e;
+  font-weight: 500;
+  outline: 0;
+}
 .ui.menu .item img.logo {
   margin-right: 1.5em;
 }
 .main.container {
   margin: 7em 10vw 0 10vw;
+}
+.about {
+  color: #284f3c;
 }
 .brand {
   color: #db0c0c;
@@ -60,5 +89,10 @@ ol {
   margin-left: 0;
   margin-right: 0;
   padding-left: 40px;
+}
+h2, h3, h4, h5 {
+  padding: 30px;
+  background: #1abc9c;
+  color: white;
 }
 </style>
