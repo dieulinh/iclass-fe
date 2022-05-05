@@ -19,7 +19,7 @@
       </ul>
     </div>
     <Nuxt/>
-    <footer>
+    <footer class="global_footer">
       <section class="copy-right">
         Copyright © 2022 Linh Nguyen. All rights reserved.
       </section>
@@ -34,12 +34,13 @@ body {
 #__layout {
   padding-bottom: 100px;
 }
-footer {
-  position: fixed;
+.global_footer {
+  position: static;
   padding: 20px;
   height: 70px;
   bottom: 0;
-  background: #139696;
+  background: #000;
+  color: #fff;
 }
 .link {
   color: #1f6097;

@@ -1,8 +1,9 @@
 <template>
   <div class="ui main text container article-detail-wrapper">
     <h1 class="article-title">{{ article.title }}</h1>
+    <div class="published-time">Posted at {{article.created_at}}</div>
 
-    <div v-html="article.content"></div>
+    <div class="article-content"  v-html="article.content" ></div>
   </div>
 </template>
 
@@ -47,6 +48,13 @@ export default {
   text-indent: 10px;
   max-width: 70%;
   margin: 100px auto;
+}
+.article-content {
+  line-height: 2;
+  font-size: 17px;
+}
+.published-time {
+  text-align: right;
 }
 
 </style>
