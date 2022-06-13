@@ -1,9 +1,8 @@
 <template>
   <div class="ui main text container">
-    <h1 class="ui heade title">About</h1>
+    <h1 class="ui heade title">Technical focusing</h1>
     <br/>
     <img src="https://freeway-devland.s3.amazonaws.com/uploads/attached_photo/photo/89/web_a1d177c9-aa3e-4f54-a404-d221a8c98ddd.JPG" class="post-cover">
-    <h1 class="ui heade title">Technical focusing</h1>
     <hr/>
     <ul>
       <li>Javascript (Nodejs, React, <strong>Vue</strong>)</li>

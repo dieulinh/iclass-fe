@@ -31,15 +31,12 @@
 body {
   background-color: #ffffff;
 }
-#__layout {
-  padding-bottom: 100px;
-}
+
 .global_footer {
-  position: static;
   padding: 20px;
   height: 70px;
   bottom: 0;
-  background: #000;
+  background: rgb(63,174,185);
   color: #fff;
 }
 .link {

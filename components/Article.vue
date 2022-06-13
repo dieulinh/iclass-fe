@@ -1,8 +1,13 @@
 <template>
   <div class="ui container">
-    <h1 class="article-title">{{article.title }}</h1>
+    <header>
+      <h1 class="article-title">{{article.title }}</h1>
+    </header>
     <hr/>
-    <div :html="article.content"></div>
+    <article class="article-content" :html="article.content">
+
+    </article>
+
   </div>
 </template>
 
@@ -22,6 +27,10 @@ export default {
 <style scoped>
 .article-title {
   color: #125316;
+}
+.article-content p {
+  line-height: 1.6;
+  font-size: 19px;
 }
 
 </style>
