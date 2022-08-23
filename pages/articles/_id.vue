@@ -1,9 +1,16 @@
 <template>
   <div class="ui main text container article-detail-wrapper">
     <h1 class="article-title">{{ article.title }}</h1>
-    <div class="published-time">Posted at {{article.created_at}}</div>
+    <div class="published-time">
+      <button type="button" class="btn btn-primary" @click="$router.go(-1)">Back</button>
+      <div> at {{article.created_at}}</div>
+    </div>
 
     <div class="article-content"  v-html="article.content" ></div>
+    <div class="published-time">
+      <button type="button" class="btn btn-primary" @click="$router.go(-1)">Back</button>
+
+    </div>
   </div>
 </template>
 
@@ -37,12 +44,11 @@ export default {
   color: #08ba12;
 }
 .article-title {
-  color: #0a4f66;
-  margin-left: -25px;
-  padding: 10px 10px 20px;
+  color: #056c8e;
   font-size: 1.3rem;
-  border-bottom: 1px solid #f7b364;
+  border-bottom: 1px solid #e5e7eb;
   margin-bottom: 20px;
+  padding-bottom: 14px;
 }
 .article-detail-wrapper {
   text-indent: 10px;
@@ -54,6 +60,7 @@ export default {
   font-size: 17px;
 }
 .published-time {
+  width: 100%;
   text-align: right;
 }
 

@@ -89,8 +89,9 @@ ol {
   padding-left: 40px;
 }
 h2, h3, h4, h5 {
-  padding: 30px;
-  background: #1abc9c;
-  color: white;
+  padding: 20px;
+  background: #d9f3ce;
+  color: #1342e5;
+  width: 100%;
 }
 </style>

@@ -315,6 +315,18 @@ input:checked + .slider:before {
   justify-content: right;
   text-align: right;
 }
+.btn {
+  align-items: center;
+  color: #e38c6e;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #378f57;
+  border-radius: 6px;
+  padding: 9px 16px;
+  margin-right: 8px;
+  font-weight: 600;
+  flex: none;
+}
 .article-content {
   margin: 0;
   width: 90%;
