@@ -1,8 +1,13 @@
-FROM node:16 as builder
+FROM node:16 as build-stage
 
-WORKDIR /app
+ENV APP_HOME=/usr/src/app
 
-COPY . .
+RUN mkdir -p $APP_HOME
+
+
+WORKDIR $APP_HOME
+COPY package.json  $APP_HOME
+COPY yarn.lock $APP_HOME
 
 RUN yarn install \
   --prefer-offline \
@@ -10,22 +15,21 @@ RUN yarn install \
   --non-interactive \
   --production=false
 
-RUN yarn build
+ENV NODE_ENV=production
 
-RUN rm -rf node_modules && \
-  NODE_ENV=production yarn install \
-  --prefer-offline \
-  --pure-lockfile \
-  --non-interactive \
-  --production=true
+COPY . $APP_HOME
 
-FROM node:lts
+RUN yarn generate
 
-WORKDIR /app
+# Production Stage
+FROM nginx:stable-alpine as production-stage
 
-COPY --from=builder /app  .
+ENV APP_HOME=/usr/src/app
 
-ENV HOST 0.0.0.0
-EXPOSE 3000
+COPY --from=build-stage $APP_HOME/dist /usr/share/nginx/html
 
-CMD [ "yarn", "start" ]
+RUN chown nginx:nginx /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
